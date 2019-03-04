@@ -45,7 +45,7 @@ header{
 }
 
 .blue{
-    background: #6666ff;
+    background: #5868bf;
 }
 .red{
     background: red;
@@ -150,28 +150,27 @@ small{
     padding: 0 10px;
 }
 .settings{
-    background: #6666ff;
+    background: #5868bf;
     border-radius: 10px;
     width: 100px;
     color: white;
 }
 .bread{
     display: flex;
-    overflow: auto;
 }
+
 .veltrix{
     width:270px;
     border-radius: 10px;
     padding: 2px;
-    margin:20px 0 20px 22px;
-    background: #6666ff;
+    margin:20px 0px 20px 15px;
+    background: #5868bf;
     height: 170px;
     flex-wrap: nowrap;
     display: inline-block;
 }
 .vertixupper{
     display: flex;
-    overflow: auto;
 }
 .vertiximgdiv{
     margin-left: 10px;
@@ -195,7 +194,7 @@ small{
     text-align: right;
     font-size: 50px;
     transform: rotate(90deg);
-    margin-left: 28px;
+    margin-left: 32.8px;
 }
 .vertixlower{
     display: flex;
@@ -236,7 +235,7 @@ caption{
 }
 .edit{
     color: white;
-    background: #6666ff;
+    background: #5868bf;
     border-radius: 1px;
     padding: 5px;
     font-size: 14px;
@@ -250,15 +249,72 @@ caption{
     margin-top: 20px;
     margin-left: 10px;
 }
-.chat{
+.chats{
     flex: 1;
     background: white;
     margin-left: 20px;
     margin-right: 32px;
+    height: 450px;
+    margin-right: 30px;
+    border-radius: 10px;
 }
-.chat h1{
+.chatheading {
+    width: inherit;
+    background: white;
+}
+
+.chatheading h1{
     text-align: left;
     font-size: 18px;
     font-weight: 300;
     margin-top: 8px;
+}
+
+.allchats {
+    height: 300px;
+    overflow: auto;
+}
+
+.chat{
+    display: flex;
+    margin-top: 15px;
+    
+}
+.chating img{
+    margin-left: 10px;
+}
+.chating p{
+    margin-left: 10px;
+}
+.rightchat{
+    margin-left: 300px;
+}
+.chatcontent {
+    padding: 10px 5px 0 5px ;
+    background: grey;
+    margin-left: 10px;
+    border-radius: 10px;
+    height:55px;
+}
+.sendmsg{
+    margin-top: 10px;
+}
+.txet{
+    padding: 15px;
+    width: 60%;
+    border: 1px solid gray;
+    font-size: 10px;
+    font-weight: 400;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    
+}
+.send{
+    background: #54a075;
+    width: 20%;
+    padding: 15px;
+    margin-left: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
