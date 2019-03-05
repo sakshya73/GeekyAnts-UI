@@ -17,6 +17,8 @@ i{
 .rightHalf{
     flex:1;
     background: #f8f8fa;
+    overflow: auto;
+    height: 100vh;
 }
 .navobject{
     padding: 10px;
@@ -39,9 +41,8 @@ a{
 .header {
     display: flex;
     width: 100%;
-}
-header{
-    display: flex;
+    background: #DADCE2;
+    flex-wrap: wrap;
 }
 
 .blue{
@@ -53,15 +54,21 @@ header{
 .green{
     background: #54a075;
 }
-.header{
-    background: #DADCE2;
-}
-.trans{
-    background: white;
+.lefthalf{
     display: flex;
-    width: 60%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
-h1{
+.righthalf{
+    margin-left: 10px;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+}
+
+.nav h1{
     font-size: 25px;
     padding: 20px;
     text-align: center;
@@ -89,7 +96,6 @@ small{
 }
 .searchdiv{
     padding-top: 15px;
-    margin-left: 610px;
 }
 .searchdiv input{
     width: 170px;
@@ -132,22 +138,24 @@ small{
 }
 .welcome{
     display: flex;
+    padding: 10px;
+    flex-direction: row-reverse;
 }
-
+.headings{
+    flex: 1;
+}
 .dheading1{
     font-size: 20px;
-    text-align: left;
+    padding: 8px;
 }
 .dheading2
 {
+    padding: 8px;
     font-size: 15px;
-    padding-left: 20px;
+    color: gray;  
 }
 .setting{
-    position: absolute;
-    right: 20px;
-    margin-top: 25px;
-    padding: 0 10px;
+    margin-top: 10px;
 }
 .settings{
     background: #5868bf;
@@ -157,17 +165,18 @@ small{
 }
 .bread{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .veltrix{
-    width:270px;
+    width:275px;
     border-radius: 10px;
     padding: 2px;
     margin:20px 0px 20px 15px;
     background: #5868bf;
     height: 170px;
-    flex-wrap: nowrap;
     display: inline-block;
+    overflow: hidden;
 }
 .vertixupper{
     display: flex;
@@ -186,6 +195,7 @@ small{
 .vertixtag{
     margin-left: 20px;
     color: #ff9900;
+    position: relative;
 }
 .fa-arrow-up{
     margin-top: 40px;
@@ -193,8 +203,12 @@ small{
 .bookmark{
     text-align: right;
     font-size: 50px;
+    width: 100px;
     transform: rotate(90deg);
-    margin-left: 32.8px;
+    //margin-left: 32.8px;
+    position: absolute;
+    left:32px;
+    bottom: 30px;
 }
 .vertixlower{
     display: flex;
@@ -208,16 +222,26 @@ small{
 }
 .transchat{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+.trans{
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+    flex: 1;
+    width: auto;
+}
+
 table{
-    margin: 20px;
     border-collapse: collapse;
     width: 100%;
 }
+
 td,th{
     text-align: left;
     border-top: 1px solid gray;
-    
     border-left: none;
     border-right: none;
     padding: 5px;
@@ -250,13 +274,14 @@ caption{
     margin-left: 10px;
 }
 .chats{
-    flex: 1;
+    margin-top: 20px;
     background: white;
     margin-left: 20px;
     margin-right: 32px;
     height: 450px;
     margin-right: 30px;
     border-radius: 10px;
+    width: 400px;
 }
 .chatheading {
     width: inherit;
@@ -287,14 +312,15 @@ caption{
     margin-left: 10px;
 }
 .rightchat{
-    margin-left: 300px;
+    justify-content:flex-end;
 }
 .chatcontent {
     padding: 10px 5px 0 5px ;
     background: grey;
     margin-left: 10px;
     border-radius: 10px;
-    height:55px;
+    min-height:55px;
+    max-width: 150px; 
 }
 .sendmsg{
     margin-top: 10px;
@@ -317,4 +343,30 @@ caption{
     margin-left: 20px;
     border-radius: 5px;
     margin-bottom: 10px;
+}
+@media screen and (max-width:1394px)
+{
+    .bread{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:845px)
+{
+    .nav{
+        display: none;
+    }
+}
+
+@media screen and (max-width:625px)
+{
+    .langdiv{
+        display: none;
+    }
+}
+@media screen and (max-width:454px)
+{
+    .searchdiv{
+        display: none;
+    }
 }
