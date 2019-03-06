@@ -317,6 +317,9 @@ caption{
 .rightchat{
     justify-content:flex-end;
 }
+li{
+    cursor: pointer;
+}
 .chatcontent {
     padding: 10px 5px 0 5px ;
     background: grey;
