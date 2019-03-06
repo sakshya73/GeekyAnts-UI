@@ -11,7 +11,7 @@ i{
 }
 .nav{
     width:220px;
-    background: #364150;
+    background: #343549;
     height: 100vh;
     color:whitesmoke;
 }
@@ -50,10 +50,10 @@ a{
     background: #5868bf;
 }
 .red{
-    background: red;
+    background: #ec4561;
 }
 .green{
-    background: #54a075;
+    background: #2aa39a;
 }
 .lefthalf{
     display: flex;
@@ -176,7 +176,7 @@ small{
     border-radius: 10px;
     padding: 2px;
     margin:20px 0px 20px 15px;
-    background: #5868bf;
+    background: #626ed4;
     height: 170px;
     display: inline-block;
     overflow: hidden;
@@ -232,7 +232,7 @@ small{
 .trans{
     padding: 20px;
     border-radius: 10px;
-    background: white;
+    background: e7e7e7;
     flex: 1;
     width: auto;
 }
