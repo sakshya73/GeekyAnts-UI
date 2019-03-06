@@ -1,5 +1,6 @@
+ 
 *{
-    padding: 0;
+    padding: 0;  /* css to all elements */
     margin: 0;
 }
 .container{
@@ -166,6 +167,8 @@ small{
 .bread{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+
 }
 
 .veltrix{
@@ -336,6 +339,9 @@ caption{
     margin-bottom: 10px;
     
 }
+button, .burger, .creatediv, .searchdiv, .langdiv, .fullscreen, .notificationdiv, .profileimg, .fa-arrow-right {
+    cursor: pointer;
+}
 .send{
     background: #54a075;
     width: 20%;
@@ -369,4 +375,7 @@ caption{
     .searchdiv{
         display: none;
     }
+}
+.togglenav{
+    display: none;
 }

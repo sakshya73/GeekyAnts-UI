@@ -6,26 +6,86 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
     <body>
+        
+        <!-- container div-->
         <div class="container">
+            
+            <!-- nav bar (left-half) -->
             <div class="nav">
                 <h1><a href="index.html">GeekyAnts</a></h1>
                 <small>MAIN</small>
-                <div class="navobject"><i class="fas fa-home"></i><a href="#">Dashboard</a><span class="dbnotification number blue">2</span></div>
-                <div class="navobject"><i class="fas fa-calendar-alt"></i><a href="#">Calendar</a></div>
-                <div class="navobject"><i class="fas fa-envelope"></i><a href="#">Email</a><span class="dbnotification">></span></div>
-                <div class="navobject"><i class="far fa-cube"></i><a href="#">UI Elements<span class="dbnotification">></span></a></div>
-                <div class="navobject"><i class="fab fa-wpforms"></i><a href="#">Forms</a><span class="dbnotification number green">9</span></div>
-                <div class="navobject"><i class="fas fa-chart-pie"></i><a href="#">Charts</a><span class="dbnotification">></span></div>
-                <div class="navobject"><i class="fas fa-table"></i><a href="#">Tables</a><span class="dbnotification">></span></div>
-                <div class="navobject"><i class="fas fa-smile-wink"></i><a href="#">Icons</a><span class="dbnotification">></span></div>
-                <div class="navobject"><i class="fas fa-map-marked-alt"></i><a href="#">Maps</a><span class="dbnotification number red">2</span></div>
+                <a href="#">
+                    <div class="navobject">
+                        <i class="fas fa-home"></i>
+                        Dashboard
+                        <span class="dbnotification number blue">2</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="navobject">
+                        <i class="fas fa-calendar-alt"></i>
+                        Calendar
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="navobject">
+                        <i class="fas fa-envelope"></i>
+                        Email<span class="dbnotification">></span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="navobject">
+                        <i class="far fa-cube"></i>
+                        UI Elements
+                        <span class="dbnotification">></span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="navobject">
+                        <i class="fab fa-wpforms"></i>
+                        Forms
+                        <span class="dbnotification number green">9</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="navobject">
+                        <i class="fas fa-chart-pie"></i>
+                        Charts
+                        <span class="dbnotification">></span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="navobject">
+                        <i class="fas fa-table"></i>
+                        Tables
+                        <span class="dbnotification">></span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="navobject">
+                        <i class="fas fa-smile-wink"></i>
+                        Icons
+                        <span class="dbnotification">></span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="navobject">
+                        <i class="fas fa-map-marked-alt"></i>
+                        Maps
+                        <span class="dbnotification number red">2</span>
+                    </div>
+                </a>
             </div>
+            <!-- right half -->
             <div class="rightHalf">
+                
+                <!--header -->
                 <div class="header">
                     <div class="lefthalf">
-                        <div class="burger"><i class="fa fa-bars burger"></i></div>
+                        <div class="burger"><i class="fa fa-bars"></i></div>
                         <div class="creatediv"><button>Create <i class="fas fa-caret-down"></i></button></div>
                         </div>
                     <div class="righthalf">
@@ -36,6 +96,8 @@
                         <div class="profileimg"><img class="harry" src="images/Sublime%20Text%20Build%203176.jpg"></div>
                     </div>
                 </div>
+                
+                
                 <div class="welcome">
                     
                     <div class="setting"><button class="settings" type="text"><i class="fas fa-cog"></i>Settings</button></div>
@@ -46,7 +108,10 @@
                     </div>
                     
                 </div>
+                
+                <!-- Cards container -->
                 <div class="bread">
+                    <!-- Card -->
                     <div class="veltrix">
                         <div class="vertixupper">
                             <div class="vertiximgdiv">
@@ -125,6 +190,7 @@
                     </div>
                 </div>
                 <div class="transchat">
+                    <!-- Transaction Table -->
                 <div class="trans">
                     <table>
                         <caption>Latest Transaction</caption>
@@ -179,6 +245,7 @@
                         
                     </table>
                 </div>
+                    <!-- CHAT BOX -->
                 <div class="chats">
                     
                     <div class="chatheading"><h1>Chat</h1></div>
@@ -252,5 +319,14 @@
             </div>
         </div>
     </div>
+        <!--Jquery -->
+        <script>
+            $(document).ready(function(){
+                $(".burger").click(function(){
+                    $(".nav").toggleClass("togglenav");
+                });
+            });
+            
+        </script>
     </body>
 </html>
