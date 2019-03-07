@@ -1,0 +1,53 @@
+
+.maindiv{
+    background: #3f87fc;
+    border-radius: 0;
+    color: white;
+}
+.maindiv h1{
+    font-weight: 200;
+}
+.maindiv h5{
+    font-weight: 100;
+}
+.cd .card{
+    margin: 0;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+.card-deck .card h1{
+    font-weight: 200;
+}
+.card-deck .card2{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.back
+{
+    background:url("../images/598970_ee10.jpg");
+    color: white;
+    text-align: center;
+    height: 300px;
+}
+p{
+    color: grey;
+}
+.fourth{
+    text-align: center;
+}
+.fourth h1{
+    font-weight: 300;
+}
+.bootimg{
+    height: 30px;
+    width: 30px;
+}
+
+h3{
+    font-size: 18px;
+}
+.cols p{
+    font-size: 12px;
+    line-height: 5px;
+}
